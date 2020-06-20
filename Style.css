@@ -1,0 +1,280 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+.header
+{
+	background: url(images/bg.jpg);
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.navbar
+{
+	text-align: center;
+	padding: 20px;
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: Tahoma;
+	margin-right: 80px;
+	border: 2px solid transparent;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.navbar a:hover
+{
+	background: #000;
+	border: 2px solid #fff;
+
+}
+
+.head-content
+{
+	text-align: center;
+}
+
+.head-content img
+{
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin-top: 20px;
+}
+.head-content img:hover
+{
+	border: 2px solid #000;
+}
+
+.name
+{
+	cursor: pointer;
+	font-size: 50px;
+	color: #fff;
+	font-family: Algerian;
+}
+
+.desc
+{
+	cursor: default;
+	font-size: 30px;
+	color: #fff;
+	font-family: Harlow solid;
+}
+
+.about-section h2
+{
+	text-align: center;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-decoration: underline;
+
+}
+
+.about-section p
+{
+	font-size: 30px;
+	font-family: roboto;
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+	border: 2px solid gray;
+	padding: 15px;
+}
+
+.skills-section
+{
+	width: 100%;
+	height: 500px;
+	background: #9ea0a3;
+	text-align: center;
+}
+
+.skills-section
+{
+	text-decoration: underline;
+	font-size: 30px;
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+.skills-section img
+{
+	height: 300px;
+	width: 300px;
+	border: 2px solid transparent;
+	border-radius: 100%;
+}
+
+.skills-section img:hover
+{
+	border: 1px solid #fff;
+	transition: 0.3s;
+}
+
+.contact-section
+{
+	height: 56vh;
+	background: gray;
+	text-align: center;
+}
+
+.contact-section span
+{
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+input
+{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 0;
+	background: #50555b;
+	color: #fff;
+}
+
+textarea
+{
+	border: 0;
+	border-radius: 10px;
+	height: 100px;
+	width: 500px;
+	background: #50555b;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+.inp-name, .inp-mail
+{
+	height: 50px;
+	width: 500px;
+}
+
+.inp-msg
+{
+	height: 100px;
+	width: 500px;
+}
+
+input[type=text]
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+.inp-btn
+{
+	padding: 10px;
+	background: #4b8cfb;
+	font-size: 20px;
+}
+
+.inp-btn:hover
+{
+	background: #000;
+	transition: 0.3s;
+}
+
+.copyright
+{
+	background: gray;
+	font-size: 20px;
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	cursor: default;
+}
+
+.toggle
+{
+	width: 30px;
+	padding: 10px;
+	float: right;
+	background: gray;
+	border-radius: 10px;
+	margin: 6px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.toggle span
+{
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 3px;
+}
+
+
+@media(max-width: 768px)
+{
+	.toggle
+	{
+		display: block;
+		position: fixed;
+	}
+	.navbar
+	{
+		display: none;
+	}
+	.navbar a
+	{
+		display: block;
+		text-align: center;
+		padding: 10px;
+	}
+	.about-section p
+{
+	width: 98%;
+	padding: 0;
+	font-size: 20px;
+
+}
+.skills-section img
+{
+	height: 110px;
+	width: 110px;
+	display: block;
+	margin: 0 auto;
+}
+.inp-name, .inp-mail, .inp-msg
+{
+	width: 95%;
+}
+}
+
+@media (max-width: 350px)
+{
+	.head-content img
+	{
+		width: 90%;
+	}
+	.name
+	{
+		font-size: 30px;
+	}
+}

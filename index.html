@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>Siv Ram Shastri</title>
+</head>
+<body>
+	<div class="toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<a href="#">Home</a>
+				<a href="#about">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="head-content">
+			<img src="images/Siv Ram Shastri.jpg" height="300px" width="300px">
+			<p class="name">Siv Ram Shastri</p>
+			<p class="desc">Frontend Web Developer</p>
+		</div>
+		</div>
+		<div class="about-section" id="about">
+			<h2>About Me</h2>
+			<p> I am a Passionate Web Developer. Interested in building beautiful Web Apps. Currently I am working as a Project Lead Intern at GirlScript Foundation.</p>
+	</div>
+	<br>
+	<div class="skills-section" id="skills">
+		<h2>Skills</h2>
+		<img src="images/html.png">
+		<img src="images/css.png">
+		<img src="images/js.png">
+	</div>
+	<div class="contact-section" id="contact">
+		<span>Contact</span>
+		<input type="text" class="inp-name" placeholder="Name">
+		<input type="text" class="inp-mail" placeholder="Your Email">
+		<textarea rows="10" cols="40" placeholder="Your Message" class="inp-msg"></textarea>
+		<input type="button" class="inp-btn" value="Submit">
+	</div>
+	<div class="copyright">
+		<p>Siv Ram Shastri &copy; 2020</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".toggle").click(function(){
+			$(".navbar").slideToggle()
+		});
+	});
+
+	$(window).resize(function(){
+		if($(window).width()>768)
+		{
+			$('.navbar').show();
+		}
+		else
+		{
+			$('.navbar').hide();
+		}
+	});
+</script>
+</html>
